@@ -24,18 +24,5 @@ public class AllTheWings {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public AllTheWings() {
-        MinecraftForge.EVENT_BUS.register(this);
-    }
-
-
-    @SubscribeEvent
-    public void onServerStarting(FMLServerStartingEvent event) {
-    }
-
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-        }
     }
 }
