@@ -24,16 +24,7 @@ public class AllTheWings {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public AllTheWings() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
         MinecraftForge.EVENT_BUS.register(this);
-    }
-
-    private void setup(final FMLCommonSetupEvent event) {
-    }
-
-    private void doClientStuff(final FMLClientSetupEvent event) {
     }
 
 
