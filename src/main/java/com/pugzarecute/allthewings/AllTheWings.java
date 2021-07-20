@@ -15,14 +15,13 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.lwjgl.system.CallbackI;
 
 import java.util.stream.Collectors;
 
 @Mod("allthewings")
 public class AllTheWings {
-
-    private static final Logger LOGGER = LogManager.getLogger();
-
+    public static final String MODID = "allthewings";
     public AllTheWings() {
     }
 }
