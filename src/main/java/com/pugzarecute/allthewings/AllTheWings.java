@@ -38,6 +38,7 @@ public class AllTheWings {
     @OnlyIn(Dist.CLIENT)
     private void elytraLayer()
     {
+        System.out.println("textures/entity/"+Init.DIRT_ELYTRA.get().getRegistryName().getPath()+".png");
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new ElytraLayerRenderManager(player,Init.DIRT_ELYTRA)));
     }
 }
