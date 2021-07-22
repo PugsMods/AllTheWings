@@ -34,7 +34,6 @@ public class ElytraBase extends Item
     @Override
     public boolean elytraFlightTick(ItemStack stack, LivingEntity entity, int flightTicks)
     {
-        //Adding 1 to ticksElytraFlying prevents damage on the very first tick.
         if (!entity.level.isClientSide && (flightTicks + 1) % 20 == 0)
         {
             stack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(EquipmentSlotType.CHEST));
