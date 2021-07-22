@@ -16,10 +16,12 @@ public class AllTheWings {
         Init.ITEMS.register(bus);
         bus.addListener(this::client);
     }
+
     private void client(FMLClientSetupEvent event)
     {
         elytraLayer();
     }
+
     @OnlyIn(Dist.CLIENT)
     private void elytraLayer()
     {
