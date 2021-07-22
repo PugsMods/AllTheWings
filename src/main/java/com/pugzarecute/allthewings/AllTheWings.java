@@ -23,6 +23,6 @@ public class AllTheWings {
     @OnlyIn(Dist.CLIENT)
     private void elytraLayer()
     {
-        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new ElytraLayerRenderManager(player)));
+        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new O2RRenderManager(player)));
     }
 }
