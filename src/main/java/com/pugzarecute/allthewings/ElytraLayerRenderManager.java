@@ -3,15 +3,12 @@ package com.pugzarecute.allthewings;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.RegistryObject;
 
 public class ElytraLayerRenderManager extends net.minecraft.client.renderer.entity.layers.ElytraLayer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>>
 {
-    private static RegistryObject<Item> ELYTRA_IN = null;
-    private  final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/tbf.png");
+    private  final ResourceLocation TEXTURE = new ResourceLocation("orangetoredelytra.png");
 
     public ElytraLayerRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn)
     {
@@ -21,7 +18,7 @@ public class ElytraLayerRenderManager extends net.minecraft.client.renderer.enti
     @Override
     public boolean shouldRender(ItemStack stack, AbstractClientPlayerEntity entity)
     {
-        return stack.getItem() == Init.DIRT_ELYTRA.get();
+        return stack.getItem() == Init.ORANGE_TO_RED_ELYTRA.get();
     }
 
     @Override
