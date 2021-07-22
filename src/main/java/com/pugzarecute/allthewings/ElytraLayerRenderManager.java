@@ -8,7 +8,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class ElytraLayerRenderManager extends net.minecraft.client.renderer.entity.layers.ElytraLayer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>>
 {
-    private  final ResourceLocation TEXTURE = new ResourceLocation("orangetoredelytra.png");
+    private  final ResourceLocation TEXTURE = new ResourceLocation(AllTheWings.MODID, "textures/entity/orangetoredelytra.png");
 
     public ElytraLayerRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn)
     {
