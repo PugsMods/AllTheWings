@@ -14,7 +14,7 @@ import javax.annotation.Nonnull;
 public class ElytraLayerRenderManager extends net.minecraft.client.renderer.entity.layers.ElytraLayer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>>
 {
     private static RegistryObject<Item> ELYTRA_IN = null;
-    private  final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/io.png");
+    private  final ResourceLocation TEXTURE = new ResourceLocation("textures/entity/tbf.png");
 
     public ElytraLayerRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn)
     {
