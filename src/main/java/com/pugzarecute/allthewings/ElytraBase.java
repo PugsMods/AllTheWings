@@ -11,8 +11,7 @@ import javax.annotation.Nullable;
 
 public class ElytraBase extends Item
 {
-    public ElytraBase(Properties properties)
-    {
+    public ElytraBase(Properties properties) {
         super(properties);
         DispenserBlock.registerBehavior (this, ArmorItem.DISPENSE_ITEM_BEHAVIOR);
     }
@@ -31,8 +30,7 @@ public class ElytraBase extends Item
     }
 
     @Override
-    public boolean elytraFlightTick(ItemStack stack, LivingEntity entity, int flightTicks)
-    {
+    public boolean elytraFlightTick(ItemStack stack, LivingEntity entity, int flightTicks) {
         if (!entity.level.isClientSide && (flightTicks + 1) % 20 == 0)
         { stack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(EquipmentSlotType.CHEST)); }
         return true;
