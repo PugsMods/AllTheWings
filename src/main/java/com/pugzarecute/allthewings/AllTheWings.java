@@ -19,10 +19,7 @@ public class AllTheWings {
         bus.addListener(this::client);
     }
 
-    private void client(FMLClientSetupEvent event)
-    {
-        elytraLayer();
-    }
+    private void client(FMLClientSetupEvent event) { elytraLayer(); }
 
     @OnlyIn(Dist.CLIENT)
     private void elytraLayer()
