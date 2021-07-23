@@ -11,5 +11,4 @@ public class Init {
 
     public static final RegistryObject<Item> ORANGE_TO_RED_ELYTRA = ITEMS.register("orange_to_red_elytra",() -> new ElytraBase(new Item.Properties().durability(425).tab(ItemGroup.TAB_MISC)));
     public static final RegistryObject<Item> YOUR_BEING_WATCHED_ELYTRA = ITEMS.register("your_being_watched_elytra",() -> new ElytraBase(new Item.Properties().durability(425).tab(ItemGroup.TAB_MISC)));
-
 }
