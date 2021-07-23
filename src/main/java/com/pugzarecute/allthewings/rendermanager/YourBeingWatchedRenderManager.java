@@ -13,8 +13,7 @@ public class YourBeingWatchedRenderManager  extends ElytraLayer<AbstractClientPl
 {
     private  final ResourceLocation TEXTURE = new ResourceLocation(AllTheWings.MODID, "textures/entity/yourbeingwatched.png");
 
-    public YourBeingWatchedRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn)
-    {
+    public YourBeingWatchedRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn) {
         super(rendererIn);
     }
 
