@@ -1,23 +1,23 @@
-modLoader = "javafml" #mandatory
-loaderVersion = "[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-license = "All rights reserved"
-#issueTrackerURL="http://my.issue.tracker/" #optional
-[[mods]] #mandatory
-modId = "allthewings" #mandatory
-version = "1.0.0-DEV" #mandatory
-displayName = "AllTheWings" #mandatory
-#updateJSONURL = "TO BE FILLED" #optional
-#displayURL="http://example.com/" #optional
-#logoFile="allthewings.png" #optional
-#credits="Thanks for this example mod goes to Java" #optional
-authors = "PugzAreCute" #optional
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "All rights
+#issueTrackerURL="http://my.issue.tracker/"
+[[mods]]
+modId = "allthewings"
+version = "1.0.0-DEV"
+displayName = "AllTheWings"
+#updateJSONURL = "TO BE FILLED"
+#displayURL="http://example.com/"
+#logoFile="allthewings.png"
+#credits="Thanks for this example mod goes to Java"
+authors = "PugzAreCute"
 description = '''
 TO BE FILLED
 '''
-[[dependencies.allthewings]] #optional
-modId = "forge" #mandatory
-mandatory = true #mandatory
-versionRange = "[36,)" #mandatory
+[[dependencies.allthewings]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.allthewings]]
