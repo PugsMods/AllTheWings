@@ -1,12 +1,15 @@
-package com.pugzarecute.allthewings;
+package com.pugzarecute.allthewings.rendermanager;
 
+import com.pugzarecute.allthewings.AllTheWings;
+import com.pugzarecute.allthewings.Init;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.renderer.entity.IEntityRenderer;
+import net.minecraft.client.renderer.entity.layers.ElytraLayer;
 import net.minecraft.client.renderer.entity.model.PlayerModel;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
-public class O2RRenderManager extends net.minecraft.client.renderer.entity.layers.ElytraLayer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>>
+public class O2RRenderManager extends ElytraLayer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>>
 {
     private  final ResourceLocation TEXTURE = new ResourceLocation(AllTheWings.MODID, "textures/entity/orangetoredelytra.png");
 

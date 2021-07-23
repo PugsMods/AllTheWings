@@ -1,5 +1,7 @@
 package com.pugzarecute.allthewings;
 
+import com.pugzarecute.allthewings.rendermanager.O2RRenderManager;
+import com.pugzarecute.allthewings.rendermanager.YourBeingWatchedRenderManager;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -26,5 +28,6 @@ public class AllTheWings {
     private void elytraLayer()
     {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new O2RRenderManager(player)));
+        Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new YourBeingWatchedRenderManager(player)));
     }
 }
