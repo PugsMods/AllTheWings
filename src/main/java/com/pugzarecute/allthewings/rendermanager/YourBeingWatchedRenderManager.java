@@ -18,8 +18,7 @@ public class YourBeingWatchedRenderManager  extends ElytraLayer<AbstractClientPl
     }
 
     @Override
-    public boolean shouldRender(ItemStack stack, AbstractClientPlayerEntity entity)
-    {
+    public boolean shouldRender(ItemStack stack, AbstractClientPlayerEntity entity) {
         return stack.getItem() == Init.YOUR_BEING_WATCHED_ELYTRA.get();
     }
 
