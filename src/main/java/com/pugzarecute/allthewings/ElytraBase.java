@@ -11,7 +11,6 @@ import javax.annotation.Nullable;
 
 public class ElytraBase extends Item
 {
-
     public ElytraBase(Properties properties)
     {
         super(properties);
@@ -35,9 +34,7 @@ public class ElytraBase extends Item
     public boolean elytraFlightTick(ItemStack stack, LivingEntity entity, int flightTicks)
     {
         if (!entity.level.isClientSide && (flightTicks + 1) % 20 == 0)
-        {
-            stack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(EquipmentSlotType.CHEST));
-        }
+        { stack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(EquipmentSlotType.CHEST)); }
         return true;
     }
 }
