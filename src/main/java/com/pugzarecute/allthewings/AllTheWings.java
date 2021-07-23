@@ -22,8 +22,7 @@ public class AllTheWings {
     private void client(FMLClientSetupEvent event) { elytraLayer(); }
 
     @OnlyIn(Dist.CLIENT)
-    private void elytraLayer()
-    {
+    private void elytraLayer() {
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new O2RRenderManager(player)));
         Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap().values().forEach(player -> player.addLayer(new YourBeingWatchedRenderManager(player)));
     }
