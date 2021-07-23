@@ -13,14 +13,12 @@ public class O2RRenderManager extends ElytraLayer<AbstractClientPlayerEntity, Pl
 {
     private  final ResourceLocation TEXTURE = new ResourceLocation(AllTheWings.MODID, "textures/entity/orangetoredelytra.png");
 
-    public O2RRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn)
-    {
+    public O2RRenderManager(IEntityRenderer<AbstractClientPlayerEntity, PlayerModel<AbstractClientPlayerEntity>> rendererIn) {
         super(rendererIn);
     }
 
     @Override
-    public boolean shouldRender(ItemStack stack, AbstractClientPlayerEntity entity)
-    {
+    public boolean shouldRender(ItemStack stack, AbstractClientPlayerEntity entity) {
         return stack.getItem() == Init.ORANGE_TO_RED_ELYTRA.get();
     }
 
